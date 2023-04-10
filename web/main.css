@@ -1,0 +1,108 @@
+#palette-zone{
+    width: 80vw;
+    height: 100vh;
+    margin: 0 auto;
+    justify-content: baseline;
+    align-items: center;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.color-div {
+    float: left;
+    height: 100%;
+    width: 20%;
+    border: 1px solid ghostwhite;
+    color: ghostwhite;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    display: flex;
+}
+.color-div span{
+    align-self: flex-end;
+    text-align: center;
+    margin: 8%;
+}
+#submit-button{
+    width: 20%;
+    height: 40%;
+    padding: 0 10px;
+    margin: auto;
+}
+#save-button{
+    float: right;
+    width: 20%;
+    height: 40%;
+    padding: 2%;
+}
+#color-picker{
+    width: 20%;
+    aspect-ratio: 1/2;
+    margin: auto;
+    padding: 1%;
+}
+#predicted-palette{
+    width: 80%;
+    aspect-ratio: 5/1;
+    border: 5px solid ghostwhite;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+#controls{
+    width: 80%;
+    height: 10%;
+    margin: auto;
+    display: flex;
+    padding: 1%;
+    justify-content: space-around;
+    align-items: center;
+}
+#title{
+    margin: 1% auto;
+    padding: 1%;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: ghostwhite;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+
+#applet {
+    width: 100%;
+    padding: 1%;
+    background-color: hsl(212, 72%, 86%);
+}
+#instructions{
+    clear: both;
+    width: 100%;
+    margin: 1 auto;
+    padding: 2%;
+    font-size: 1em;
+    font-weight: bold;
+    color: ghostwhite;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+
+#color-picker-with-instructions{
+    float: left;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+#submit-button-with-instructions{
+    float: right;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+
+}
+

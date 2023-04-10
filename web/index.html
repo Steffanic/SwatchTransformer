@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<header>
+    <title>Swatch Transformer</title>
+</header>
+
+<body>
+    <link rel="stylesheet" href="https://unpkg.com/alwan/dist/css/alwan.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://unpkg.com/alwan/dist/js/alwan.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/onnxruntime-web/dist/ort.min.js">
+    </script>
+    <div id="applet">
+        <p id="title"> Color Palette Transformer </p>
+        <div id="palette-zone">
+            <div id="controls">
+                <div id="color-picker-with-instructions">
+                    <p id="instructions"> Step #1: Pick a color to base your palette on </p>
+                    <div id="color-picker"></div>
+                </div>
+                <div id="submit-button-with-instructions">
+                    <p id="instructions"> Step #2: Submit(Click again for more palettes!) </p>
+                    <div id="submit-button">
+                        <button onclick="clickSubmit()"> Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div id="predicted-palette">
+                <div id="predicted-color-1" class="color-div"></div>
+                <div id="predicted-color-2" class="color-div"></div>
+                <div id="predicted-color-3" class="color-div"></div>
+                <div id="predicted-color-4" class="color-div"></div>
+                <div id="predicted-color-5" class="color-div"></div>
+            </div>
+            <div id="save-button">
+                <button onclick="savePalette()"> Save Palette</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
