@@ -108,7 +108,7 @@ function setPredictedPallete(){
 async function run(inputSrcData) {
   try {
     // create a new session and load the AlexNet model.
-    const session = await ort.InferenceSession.create('../models/swatchTransformer_fiveColor.onnx');
+    const session = await ort.InferenceSession.create('./models/swatchTransformer_fiveColor.onnx');
 
     // prepare dummy input data
     const dims = [1, 1, 3];
