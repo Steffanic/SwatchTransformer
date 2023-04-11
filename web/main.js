@@ -108,7 +108,7 @@ function setPredictedPallete(){
 async function run(inputSrcData) {
   try {
     // create a new session and load the AlexNet model.
-    const session = await ort.InferenceSession.create('./models/swatchTransformer_fiveColor.onnx');
+    const session = await ort.InferenceSession.create('./models/swatchTransformer_fiveColor_w_context.onnx');
 
     // prepare dummy input data
     const dims = [1, 1, 3];
@@ -122,7 +122,7 @@ async function run(inputSrcData) {
     }
     inputTgtData = targetArray;
     // prepare feeds. use model input names as keys.
-    const feeds = { input_src: new ort.Tensor('float32', inputSrcData, dims), input_tgt: new ort.Tensor('float32', inputTgtData, tgt_dims) };
+    const feeds = { input_src: new ort.Tensor('float32', inputSrcData, dims), input_tgt: new ort.Tensor('float32', inputTgtData, tgt_dims), input_src_type: new ort.Tensor('int64', BigInt64Array.from([0n]), [1]), input_tgt_type: new ort.Tensor('int64', BigInt64Array.from([0n]), [1]) };
 
     // feed inputs and run
     const results = await session.run(feeds);
