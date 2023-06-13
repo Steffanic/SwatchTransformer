@@ -8,6 +8,6 @@ This project was cool, to me, because it is a straightforward seq2seq problem st
 
 I've included a sample gif below, and you can try it out at steffanic.github.io/SwatchTransformer/, too!
 
-![image](https://github.com/Steffanic/SwatchTransformer/assets/38746732/4f37c0d9-ecc3-4136-83f3-ab238661c089)
+![image](https://user-images.githubusercontent.com/38746732/230979805-b4c86452-c24f-44b8-b39e-1d7c5f31fe1d.gif)
 
 
